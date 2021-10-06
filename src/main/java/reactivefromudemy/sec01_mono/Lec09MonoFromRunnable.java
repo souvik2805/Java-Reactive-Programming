@@ -14,6 +14,8 @@ public class Lec09MonoFromRunnable {
 		// I want to be notified when the opeation is completed at that time Runnable is
 		// very useful
 
+		Runnable runnable = () -> System.out.println("DONE");
+
 		Mono.fromRunnable(timeConsumingProcess()).subscribe(Util.onNext(), Util.OnError(), () -> {
 			System.out.println("Process is done. Sending emails.....");
 		});
