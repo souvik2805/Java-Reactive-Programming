@@ -1,4 +1,4 @@
-## Flux
+## Flux 
 
 | Type | Condition | What to Use
 |--|--|--|
